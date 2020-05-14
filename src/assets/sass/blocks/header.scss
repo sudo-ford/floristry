@@ -1,0 +1,16 @@
+.header {
+    width: 100%;
+    display: flex;
+
+    position: relative;
+}
+
+.header__wrapper {
+    padding-bottom: 10px;
+
+    background-color: $bg-color;
+
+    @media ($tablet) {
+        background-color: transparent;
+    }
+}

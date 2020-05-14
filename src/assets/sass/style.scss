@@ -14,8 +14,11 @@ html, body {
 }
 
 body {
+    max-width: 1920px;
+
     position: relative;
     background-color: $bg-color;
+
     color: $text-default;
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -74,9 +77,20 @@ p {
 
     margin: 0 auto;
     padding: 0 30px;
+
+    @media ($tablet) {
+        padding: 0 50px;
+    }
+
+    @media ($desktop) {
+        padding: 0 90px;
+    }
 }
 
 /* Blocks */
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu.scss";
 
 
 /* Vendor libs */
