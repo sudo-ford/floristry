@@ -4,6 +4,10 @@
     align-items: center;
     margin-top: 18px;
 
+    position: relative;
+
+    z-index: 1;
+
     @media ($tablet) {
         margin-top: 40px;
     }
@@ -16,6 +20,8 @@
 .logo__img {
     width: 83px;
     height: 14px;
+
+    fill: none;
 }
 
 .logo__link {

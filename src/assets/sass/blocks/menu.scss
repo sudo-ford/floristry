@@ -1,4 +1,5 @@
 .menu {
+    display: none;
     width: 100vw;
     height: 100vh;
 
@@ -9,13 +10,12 @@
     text-align: center;
     background-color: $bg-color;
 
-    opacity: 0;
-    z-index: 1;
+    z-index: 2;
 
     transition: .2s;
 
     &--active {
-        opacity: 1;
+        display: block;
     }
 }
 
@@ -29,7 +29,7 @@
 
     background-color: transparent;
     opacity: 0.5;
-    z-index: 2;
+    z-index: 10;
 
     transition: .2s;
 

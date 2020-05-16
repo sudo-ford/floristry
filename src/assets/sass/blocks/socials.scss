@@ -1,0 +1,43 @@
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @media ($desktop) {
+        width: auto;
+        flex-direction: column;
+
+        position: absolute;
+        left: 90px;
+        bottom: 30px;
+    }
+}
+
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+    background-color: $bg-color;
+
+    transition: .2s;
+
+    &:hover {
+        background-color: #fff;
+    }
+
+    &:hover > .socials__icon {
+        //stroke: #000;
+        fill: #000;
+    }
+}
+
+.socials__icon {
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+}
